@@ -1,0 +1,23 @@
+//
+// Profile menu component.
+//   Menu layout for profile actions.
+// --------------------------------------------------
+
+.profileMenu {
+	display: none;
+
+	@media @mq-tablet-up {
+		position: absolute;
+		top: -55px;
+		right: 15px;
+		display: block;
+	}		
+	
+	&-item {
+		float: left;
+
+		&:first-child {
+			margin-right: 5px;
+		}
+	}
+}
