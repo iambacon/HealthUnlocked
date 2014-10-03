@@ -1,0 +1,71 @@
+//
+// Profile header component.
+//   Header for a profile page.
+// --------------------------------------------------
+
+.profileHeader {
+	background-color: @meta-bg;
+	position: relative;
+	background-image: url(../../img/couchto5k_banner_1170x250.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	height: 150px;
+	padding-top: 150px;
+	.box-sizing;
+
+	@media @mq-tablet-up {
+		height: 250px;
+		padding-top: 200px;
+	}
+
+	&-title {
+		font-size: 26px;
+		font-weight: 700;
+		text-align: center;		
+		margin-bottom: 15px;
+
+		@media @mq-tablet-up {
+			text-align: left;
+			position: absolute;
+			top: 0;
+		}
+	}
+
+	&-metaContainer {
+		background-color: @meta-bg;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid @border-colour-dark;
+
+		@media @mq-tablet-up {
+			position: relative;
+			padding-left: 15px;
+			padding-right: 10px;
+		}
+	}
+
+	&-desc {
+		text-align: center;		
+		margin-bottom: 0;
+
+		@media @mq-tablet-up {
+			text-align: left;
+			padding-left: 125px;
+			padding-top: 20px;
+			margin-right: 255px;
+		}		
+	}
+
+	&-link {
+		text-decoration: none;
+		color: @link;
+
+		&:after {
+			content: '>';
+			vertical-align: middle;
+			padding-left: .2em;
+		}
+	}
+}

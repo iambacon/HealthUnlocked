@@ -1,0 +1,37 @@
+//
+// Button components.
+//   Buttons of all shapes and sizes.
+// --------------------------------------------------
+
+.btn { // button base
+	padding: 10px 12px;
+	color: @btn-colour;
+	background-color: @btn-bg;	
+	border-style: solid;
+	border-color: @border-colour;
+	border-width: 1px;
+	border-bottom-width: 2px;
+	border-radius: 3px;
+	display: inline-block;
+	.box-sizing;
+
+	&--link {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&--action {
+		color: @btn-action-colour;
+		background-color: @btn-action-bg;
+		border-color: @btn-action-bg;
+		border-bottom-color: @btn-action-border-colour;
+	}
+
+	&--nav {
+		border-bottom-color: @btn-nav-border-colour;
+	}
+}
+	
